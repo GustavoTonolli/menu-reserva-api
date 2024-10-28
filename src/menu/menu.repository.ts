@@ -1,53 +1,67 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class MenuRepository {
-    private menu = [
-        {
-            "id": 1,
-            "name": "Cheeseburger",
-            "price": 12.99,
-            "category": "Burgers",
-            "image": "https://example.com/images/cheeseburger.jpg",
-            "ingredients": ["Beef patty", "Cheese", "Lettuce", "Tomato", "Onion", "Pickle", "Bun"]
-        },
-        {
-            "id": 2,
-            "name": "Margherita Pizza",
-            "price": 15.99,
-            "category": "Pizza",
-            "image": "https://example.com/images/margherita.jpg",
-            "ingredients": ["Tomato sauce", "Mozzarella", "Basil", "Olive oil"]
-        },
-        {
-            "id": 3,
-            "name": "Caesar Salad",
-            "price": 10.5,
-            "category": "Salads",
-            "image": "https://example.com/images/caesar_salad.jpg",
-            "ingredients": ["Romaine lettuce", "Caesar dressing", "Parmesan", "Croutons"]
-        },
-        {
-            "id": 4,
-            "name": "Spaghetti Carbonara",
-            "price": 13.99,
-            "category": "Pasta",
-            "image": "https://example.com/images/carbonara.jpg",
-            "ingredients": ["Spaghetti", "Eggs", "Pancetta", "Pecorino cheese", "Black pepper"]
-        },
-        {
-            "id": 5,
-            "name": "Chicken Tacos",
-            "price": 8.99,
-            "category": "Tacos",
-            "image": "https://example.com/images/chicken_tacos.jpg",
-            "ingredients": ["Chicken", "Tortilla", "Lettuce", "Tomato", "Cheese", "Sour cream"]
-        }
-    ]
-    ;
+  private menu = [
+    {
+      id: '1',
+      name: 'Burger de carne',
+      price: 12.99,
+      category: 'principal',
+      image: 'https://example.com/images/cheeseburger.jpg',
+      description: '',
+    },
+    {
+      id: '2',
+      name: 'Pizza margherita',
+      price: 15.99,
+      category: 'principal',
+      image: 'https://example.com/images/margherita.jpg',
+      description: '',
+    },
+    {
+      id: '3',
+      name: 'Salada tropical',
+      price: 10.5,
+      category: 'entrada',
+      image: 'https://example.com/images/caesar_salad.jpg',
+      description: '',
+    },
+    {
+      id: '4',
+      name: 'Hamburguer de cordeiro',
+      price: 13.99,
+      category: 'principal',
+      image: 'https://example.com/images/carbonara.jpg',
+      description: '',
+    },
+    {
+      id: '5',
+      name: 'Tacos',
+      price: 8.99,
+      category: 'entrada',
+      image: 'https://example.com/images/chicken_tacos.jpg',
+      description: '',
+    },
+    {
+      id: '6',
+      name: 'Coca-cola',
+      price: 6.99,
+      category: 'bebida',
+      image: 'https://example.com/images/chicken_tacos.jpg',
+      description: '',
+    },
+    {
+      id: '7',
+      name: 'Petit Gâteau',
+      price: 12.99,
+      category: 'sobremesa',
+      image: 'https://example.com/images/chicken_tacos.jpg',
+      description: '',
+    },
+  ];
 
-    async list() {
-        return this.menu;
-    }
+  async list() {
+    return this.menu;
+  }
 }
-
