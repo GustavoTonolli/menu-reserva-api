@@ -4,9 +4,7 @@ export class CreateReservationDTO {
   @IsString({ message: 'O campo name deve ser uma string! Ex.: Diego' })
   @IsNotEmpty({ message: 'O campo name é obrigatório!' })
   name: string;
-  @IsNumber(undefined, {
-    message: 'O campo people_qty deve ser um número inteiro!  Ex.: 10',
-  })
+  @IsString()
   @IsNotEmpty({ message: 'O campo people_qty é obrigatório!' })
   people_qty: number;
   @IsString({
