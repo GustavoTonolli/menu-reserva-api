@@ -21,7 +21,7 @@ async function bootstrap() {
     .setVersion('1.0')
     .build();
 
-  app.use(cors({ origin: 'http://localhost:5173' }));
+  app.use(cors({ origin: 'https://menu-reserva-frontend.onrender.com' }));
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
