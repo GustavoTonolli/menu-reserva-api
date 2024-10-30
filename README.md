@@ -2,53 +2,73 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<p align="center">Um framework progressivo para <a href="http://nodejs.org" target="_blank">Node.js</a> para criar aplicações server-side eficientes e escaláveis.</p>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="Versão NPM" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Licença do Pacote" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="Downloads NPM" /></a>
 <a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Cobertura de Testes" /></a>
 <a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
 </p>
-## Description
 
-## Project setup
+## Descrição
+
+Este projeto utiliza o framework NestJS para a construção de uma aplicação robusta e escalável no lado do servidor. O projeto foi configurado para integração com banco de dados PostgreSQL e é containerizado usando Docker para facilitar o desenvolvimento e o deployment.
+
+## Link da aplicação backend
+
+https://menu-reserva-api.onrender.com
+
+## Configuração do Projeto
+
+Para instalar as dependências do projeto, execute:
 
 ```bash
 $ npm install
 ```
 
-## Compile and run the project
+## Compilar e Executar o Projeto
+
+Você pode iniciar o projeto nos seguintes modos:
 
 ```bash
-# development
+# desenvolvimento
 $ npm run start
 
-# watch mode
+# modo observador (watch)
 $ npm run start:dev
 
-# production mode
+# modo produção
 $ npm run start:prod
 ```
 
-## Run tests
+## Executar Testes
+
+Para rodar testes automatizados:
 
 ```bash
-# unit tests
+# testes unitários
 $ npm run test
 
-# e2e tests
+# testes end-to-end
 $ npm run test:e2e
 
-# test coverage
+# cobertura dos testes
 $ npm run test:cov
 ```
+
+## Dependências
+
+Explicação de cada dependência utilizada no projeto:
+
+- **NestJS**: Framework para Node.js que fornece uma estrutura modular, usando TypeScript, para criar aplicações server-side escaláveis.
+- **TypeScript**: Linguagem que adiciona tipos ao JavaScript, ajudando na criação de um código mais seguro e previsível.
+- **TypeORM**: ORM (Object Relational Mapper) que facilita o mapeamento entre classes e tabelas do banco de dados.
+- **ESLint**: Ferramenta de linting para manter o código limpo e identificar problemas de padrão e possíveis erros.
+- **Swagger**: Ferramenta para documentar e testar APIs, com uma interface visual para os endpoints.
+- **Class-validator**: Biblioteca para validar objetos e garantir que os dados sigam as regras e tipos esperados.
+- **Class-transformer**: Utilizada para transformar e validar objetos JSON em classes e vice-versa.
+- **PostgreSQL**: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar dados da aplicação.
+- **Docker**: Plataforma de containerização que permite criar e rodar containers para facilitar o desenvolvimento e a implantação.
