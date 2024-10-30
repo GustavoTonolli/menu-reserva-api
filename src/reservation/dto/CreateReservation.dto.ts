@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { IsNotEmpty, IsString } from 'class-validator';
 
 export class CreateReservationDTO {
   @IsString({ message: 'O campo name deve ser uma string! Ex.: Diego' })
@@ -6,7 +6,7 @@ export class CreateReservationDTO {
   name: string;
   @IsString()
   @IsNotEmpty({ message: 'O campo people_qty é obrigatório!' })
-  people_qty: number;
+  people_qty: string;
   @IsString({
     message: 'O campo date deve ser uma String! Ex.: 22/11/2024',
   })

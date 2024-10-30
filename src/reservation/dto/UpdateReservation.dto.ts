@@ -6,7 +6,7 @@ export class UpdateReservationDTO {
   name: string;
   @IsNumber()
   @IsNotEmpty()
-  people_qty: number;
+  people_qty: string;
   @IsString()
   @IsNotEmpty()
   date: string;

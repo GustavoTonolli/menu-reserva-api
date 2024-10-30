@@ -15,7 +15,7 @@ export class ReservationEntity {
   @Column({ name: 'name', length: 100, nullable: false })
   name: string;
   @Column({ name: 'people_qty', nullable: false })
-  people_qty: number;
+  people_qty: string;
   @Column({ name: 'date', nullable: false })
   date: string;
   @Column({ name: 'time', nullable: false })
